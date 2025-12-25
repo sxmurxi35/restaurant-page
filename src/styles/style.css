@@ -1,0 +1,84 @@
+@font-face {
+  font-family: Caudex;
+  src: url("../fonts/Caudex-Regular.ttf");
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 20px;
+
+  background-color: #f3d5b5;
+}
+
+header h1 {
+  font-size: 5.2rem;
+  font-family: Caudex;
+}
+
+header nav {
+  margin-top: 15px;
+  display: flex;
+  gap: 40px;
+}
+
+.nav-btn {
+  padding: 3px 5px;
+
+  font-size: 2rem;
+  border: 2px solid #c2aa91;
+  border-radius: 10px;
+  background-color: transparent;
+  cursor: pointer;
+  box-shadow: 0 2px 5px #0000001a;
+
+  font-family: "Times New Roman", Times, serif;
+  transition: all 0.2s;
+}
+.nav-btn:hover {
+  background-color: #f5ddc4;
+  border: 2px solid #c8b39c;
+}
+
+.nav-btn.selected {
+  background-color: #ffedd8;
+  border: 2px solid #cebba7;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0e0e0e;
+  font-size: 1.4rem;
+}
+
+footer a:link, footer a:visited{
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+footer a:hover, footer a:active{
+    color: #4e4e4e
+}

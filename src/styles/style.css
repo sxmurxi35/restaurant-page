@@ -22,6 +22,7 @@ header {
   padding: 10px 20px;
 
   background-color: #f3d5b5;
+  box-shadow: 0 2px 5px #0000001a;
 }
 
 header h1 {
@@ -56,6 +57,7 @@ header nav {
 .nav-btn.selected {
   background-color: #ffedd8;
   border: 2px solid #cebba7;
+  transition: all 0.3s ease;
 }
 
 footer {
@@ -69,12 +71,14 @@ footer {
   font-size: 1.4rem;
 }
 
-footer a:link, footer a:visited{
-    color: inherit;
-    text-decoration: none;
-    transition: all 0.2s;
+footer a:link,
+footer a:visited {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.2s;
 }
 
-footer a:hover, footer a:active{
-    color: #4e4e4e
+footer a:hover,
+footer a:active {
+  color: #4e4e4e;
 }

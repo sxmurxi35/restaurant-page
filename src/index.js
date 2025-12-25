@@ -1,4 +1,5 @@
 import homePage from "./home";
+import menuPage from "./menu";
 import "./styles/style.css";
 
 homePage();
@@ -10,15 +11,17 @@ navBtns.forEach((btn) => {
     if (e.target.id == btnID[0]) {
       document.querySelector(`#${btnID[0]}`).classList.add("selected");
       document.querySelector(`#${btnID[1]}`).classList?.remove("selected");
-        document.querySelector(`#${btnID[2]}`).classList?.remove("selected");
-        
-        homePage()
+      document.querySelector(`#${btnID[2]}`).classList?.remove("selected");
+
+      homePage();
     }
 
     if (e.target.id == btnID[1]) {
       document.querySelector(`#${btnID[0]}`).classList?.remove("selected");
       document.querySelector(`#${btnID[1]}`).classList.add("selected");
       document.querySelector(`#${btnID[2]}`).classList?.remove("selected");
+
+      menuPage();
     }
 
     if (e.target.id == btnID[2]) {

@@ -1,0 +1,43 @@
+body {
+  background-color: #ffedd8;
+}
+.description {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 400px;
+
+  gap: 40px 20px;
+
+  padding: 40px 18dvw;
+}
+
+.desc-sect {
+  font-family: Caudex;
+  background-color: #fff1e0;
+  padding: 15px;
+  border-radius: 20px;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.163);
+}
+
+.desc-sect h2 {
+  font-size: 3.2rem;
+}
+
+.desc-sect p {
+  padding: 15px 20px;
+  font-size: 2rem;
+}
+
+.img-sect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.img-sect img {
+  width: 350px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}

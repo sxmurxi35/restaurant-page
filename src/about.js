@@ -18,12 +18,6 @@ function aboutPage() {
   main.append(aboutSect);
 }
 
-// function createParagraph(text) {
-//   const para = document.createElement("p");
-//   para.innerHTML = text;
-//   return para;
-// }
-
 function createSect(title, text) {
   const sect = document.createElement("section");
 

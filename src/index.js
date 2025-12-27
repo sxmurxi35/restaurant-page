@@ -1,5 +1,6 @@
 import homePage from "./home";
 import menuPage from "./menu";
+import aboutPage from "./about";
 import "./styles/style.css";
 
 homePage();
@@ -28,6 +29,8 @@ navBtns.forEach((btn) => {
       document.querySelector(`#${btnID[0]}`).classList?.remove("selected");
       document.querySelector(`#${btnID[1]}`).classList?.remove("selected");
       document.querySelector(`#${btnID[2]}`).classList.add("selected");
+      
+      aboutPage()
     }
   });
 });

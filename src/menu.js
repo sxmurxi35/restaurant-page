@@ -44,10 +44,11 @@ function menuPage() {
 }
 
 function menuSectCreate(title, arr) {
-  const sect = document.createElement("section");
+    const sect = document.createElement("section");
+    sect.classList.add('food-sect')
 
   const sectTitle = document.createElement("h3");
-  sectTitle.textContent = title;
+    sectTitle.textContent = title;
 
   const sectThings = document.createElement("section");
   for (let i = 0; i < arr.length; i++) {
@@ -55,6 +56,7 @@ function menuSectCreate(title, arr) {
     para.textContent = `${arr[i][0]} - ${arr[i][1]}$`;
     sectThings.appendChild(para);
   }
+    sectThings.classList.add('food-para-sect')
   sect.append(sectTitle, sectThings);
 
   return sect;
